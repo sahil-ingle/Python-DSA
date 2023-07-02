@@ -1,5 +1,3 @@
-# Python_DSA
-
 # DSA in Python Repository Documentation
 
 The "DSA in Python" repository is a collection of Data Structures and Algorithms implemented in the Python programming language. It serves as a resource for learning and practicing fundamental data structures and algorithms.
