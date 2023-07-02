@@ -16,7 +16,7 @@ To get started with the "DSA in Python" repository, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone https://github.com/your-username/dsa-in-python.git
+   git clone https://github.com/sahil-ingle/Python-DSA.git
    ```
 
 2. Install Python (if not already installed) to run the code snippets.
