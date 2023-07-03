@@ -4,27 +4,34 @@ def merge_sort(arr):
 
     mid = len(arr) // 2
 
-    left_arr = []
-    right_arr = []
+    left_arr = arr[:mid]
+    right_arr = arr[mid:]
 
-    for i in range(len(arr) - 1):
-        if arr[i] <= arr[mid]:
-            left_arr.append(arr[i])
+    merge_sort(left_arr)
+    merge_sort(right_arr)
+
+    i, j, k = 0, 0, 0
+
+    while i < len(left_arr) and j < len(right_arr):
+        if left_arr[i] < right_arr[j]:
+            arr[k] = left_arr[i]
+            i += 1
         else:
-            right_arr.append(arr[i])
+            arr[k] = right_arr[j]
+            j += 1
+        k += 1
 
-    if len(left_arr) == 1 and len(right_arr) == 0:
-        return merge_sort(left_arr)
-    if len(right_arr) == 1 and len(left_arr) == 0:
-        return merge_sort(right_arr)
+    while i < len(left_arr):
+        arr[k] = left_arr[i]
+        i += 1
+        k += 1
 
-    if len(left_arr) == 1 and len(right_arr) == 1:
-        if left_arr[0] > right_arr[0]:
-            return right_arr + left_arr
-        else:
-            return left_arr + right_arr
+    while j < len(right_arr):
+        arr[k] = right_arr[j]
+        j += 1
+        k += 1
 
-    return merge_sort(left_arr) + merge_sort(right_arr)
+    return arr
 
 
 x = [2, 2, 44, 324, 54345, 324, 54, 324, 43, 61, 46, 1, 23]
