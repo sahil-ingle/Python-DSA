@@ -36,6 +36,3 @@ Each directory contains Python files (.py) for the respective data structures or
 
 Contributions to this repository are welcome! If you find any bugs, have improvements to the existing code, or want to add new data structures or algorithms, feel free to open a pull request. Please ensure that your code follows good coding practices and includes appropriate documentation.
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE). Feel free to use the code for personal or educational purposes.
