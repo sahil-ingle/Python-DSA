@@ -18,10 +18,6 @@ The repository is organized into the following directories:
 
 - `Searching Algorithms`: Provides code for various searching algorithms such as linear search, binary search, interpolation search, and others.
 
-- `Dynamic Programming`: Contains implementations of algorithms and solutions using dynamic programming techniques.
-
-- `Miscellaneous`: Contains utility functions, common algorithms, or miscellaneous data structures that don't fit into any specific category.
-
 ## Getting Started
 
 To use the code in this repository, you can clone the repository to your local machine:
