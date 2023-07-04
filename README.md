@@ -1,3 +1,4 @@
+```markdown
 # Data Structures and Algorithms in Python
 
 This repository contains implementations of various data structures and algorithms in Python. The code provided here serves as a reference and learning resource for those interested in understanding and implementing fundamental concepts in DSA using Python.
@@ -26,9 +27,9 @@ The repository is organized into the following directories:
 
 To use the code in this repository, you can clone the repository to your local machine:
 
-shell
-git clone https://github.com/sahil-ingle/Python-DSA/
-
+```shell
+git clone <repository_url>
+```
 
 Each directory contains Python files (.py) for the respective data structures or algorithms. You can explore the code and run it using a Python interpreter or IDE of your choice.
 
@@ -39,6 +40,6 @@ Contributions to this repository are welcome! If you find any bugs, have improve
 ## License
 
 This repository is licensed under the [MIT License](LICENSE). Feel free to use the code for personal or educational purposes.
-
+```
 
 Feel free to make any further adjustments or additions to this README.md file to suit your requirements.
