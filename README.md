@@ -27,7 +27,7 @@ The repository is organized into the following directories:
 To use the code in this repository, you can clone the repository to your local machine:
 
 ```shell
-git clone <repository_url>
+git clone https://github.com/sahil-ingle/Python-DSA/
 ```
 
 Each directory contains Python files (.py) for the respective data structures or algorithms. You can explore the code and run it using a Python interpreter or IDE of your choice.
