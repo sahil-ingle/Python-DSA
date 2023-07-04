@@ -1,4 +1,3 @@
-```markdown
 # Data Structures and Algorithms in Python
 
 This repository contains implementations of various data structures and algorithms in Python. The code provided here serves as a reference and learning resource for those interested in understanding and implementing fundamental concepts in DSA using Python.
