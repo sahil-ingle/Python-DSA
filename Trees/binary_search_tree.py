@@ -37,7 +37,7 @@ class binary_tree:
     def in_recursive_print(self,current_node):
         if current_node:
             self.in_recursive_print(current_node.left)
-            print(current_node.data, " - ", end="")
+            print(current_node.data, "-", end="")
             self.in_recursive_print(current_node.right)
 
     def pre_order_print(self):
@@ -60,8 +60,28 @@ class binary_tree:
         if current_node:
             self.post_recursive_print(current_node.left)
             self.post_recursive_print(current_node.right)
-            print(current_node.data)
+            print(current_node.data, "+", end="")
 
+    def remove(self,data):
+        if self.is_empty():
+            return "its empty"
+        else:
+            self.recursive_remove(self.root)
+
+    def insert(self, new_val):
+        new_node = node(new_val)
+        current_node = self.root
+        while current_node is not None:
+            if new_node.data < current_node.data:
+                if current_node.left is None:
+                    current_node.left = new_node
+                    break
+                current_node = current_node.left
+            else:
+                if current_node.right is None:
+                    current_node.right = new_node
+                    break
+                current_node = current_node.right
 
 
 obj = binary_tree()
@@ -75,7 +95,7 @@ obj.append(12)
 obj.append(20)
 obj.append(30)
 obj.append(6)
-obj.append(8)
+obj.insert(8)
 
 obj.in_order_print()
 obj.pre_order_print()
