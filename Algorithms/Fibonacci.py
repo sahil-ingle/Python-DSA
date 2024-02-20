@@ -5,12 +5,16 @@ def fibo(num):
         return 1
 
     a,b = 0,1
+    print(a)
+    print(b)
 
     for _ in range(num - 2):
         temp = a+b
         a = b
         b = temp
+        print(temp)
 
-    return temp
 
-print(fibo(0))
+
+n = int(input("Enter a number = "))
+fibo(n)
