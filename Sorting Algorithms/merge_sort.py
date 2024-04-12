@@ -18,7 +18,7 @@ def merge_sort(arr):
             i += 1
         else:
             arr[k] = right_arr[j]
-            j += 1
+            j += 1  
         k += 1
 
     while i < len(left_arr):
@@ -33,7 +33,6 @@ def merge_sort(arr):
 
     return arr
 
-
-x = [2, 2, 44, 324, 54345, 324, 54, 324, 43, 61, 46, 1, 23]
+x = [1,5,6,9,3,9,2,0,12]
 
 print(merge_sort(x))
