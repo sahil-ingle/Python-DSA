@@ -21,11 +21,15 @@ class Trie:
 
         for char in word:
             if char not in node.children:
-                return False
-            
-            if node.children[char].isEnd:
-                return True
+                return False    
             node = node.children[char]
+        
+        if node.isEnd:
+            return True
+        
+        return False
+        
+        
         
         
     
@@ -47,7 +51,7 @@ tri.insert("appreciate")
 tri.insert("bromite")
 
 
-print(tri.startWith("ap"))
+print(tri.search("apple"))
 print(tri.startWith("appr"))
 print(tri.startWith("c"))
 print(tri.startWith("b"))
